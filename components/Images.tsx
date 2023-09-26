@@ -18,9 +18,9 @@ console.log(photos)
 
   return (
     <div>
-      {photos.map((item: { title: string; description: string }) => (
+      {photos.map((item: { title: string; description: string, thumbnailUrl: string }) => (
         <div key={item.title}>
-            <img src={item.thumbnailUrl} width={150} alt={item.title} height={150} />
+            <Image src={item.thumbnailUrl} width={150} alt={item.title} height={150} />
           <h1>{item.title}</h1>
           <p>{item.description}</p>
         </div>
