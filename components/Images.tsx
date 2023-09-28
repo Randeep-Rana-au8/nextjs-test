@@ -9,7 +9,7 @@ const Images = () => {
     const fetchImages = async () => {
       await fetch('https://jsonplaceholder.typicode.com/photos')
         .then((response) => response.json())
-        .then((data) => setPhotos(data.slice(0, 500)));
+        .then((data) => setPhotos(data.slice(0, 100)));
     };
 
     fetchImages();
